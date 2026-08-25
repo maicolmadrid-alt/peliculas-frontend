@@ -1,16 +1,57 @@
-# React + Vite
+# Front End - Gestión de Películas y Series
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend desarrollado como **Evidencia de Aprendizaje 2** para la asignatura **Ingeniería Web II** de la **IU Digital de Antioquia**.
 
-Currently, two official plugins are available:
+La aplicación fue desarrollada con **ReactJs** y permite consumir la API REST construida previamente con Node.js, Express, MongoDB y Mongoose.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+La aplicación permite administrar los siguientes módulos:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Géneros
+- Directores
+- Productoras
+- Tipos
+- Media (Películas y Series)
 
-## Expanding the ESLint configuration
+En cada módulo es posible consultar, crear, actualizar y eliminar registros.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El módulo Media permite relacionar una película o serie con:
+
+- Género
+- Director
+- Productora
+- Tipo
+
+## Tecnologías utilizadas
+
+- ReactJs
+- Vite
+- Axios
+- React Router
+- Bootstrap
+- SweetAlert2
+
+## Ejecución
+
+Instalar las dependencias:
+
+```bash
+npm install
+
+Iniciar el proyecto:
+
+npm run dev
+
+La aplicación se ejecuta por defecto en:
+
+http://localhost:5173
+API REST
+
+El frontend consume la API ejecutada en:
+
+http://localhost:4000/api
+
+Repositorio del backend:
+
+https://github.com/maicolmadrid-alt/peliculas-backend
