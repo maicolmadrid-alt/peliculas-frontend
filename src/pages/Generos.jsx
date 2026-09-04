@@ -92,7 +92,7 @@ function Generos() {
       
 
       const mensajeError =
-        error.response?.data?.errors?.[0]?.message
+        error.response?.data?.errors?.[0]?.message ||
         error.response?.data?.message ||
         error.response?.data?.error ||
         'No fue posible guardar el género.'
